@@ -3,22 +3,22 @@ package it.nio74maz.libretto;
 import java.time.LocalDate;
 
 public class Voto {
-    private int voto;
+    private int punti;
     private String corso;
     private LocalDate data;
 
-    public Voto(int voto, String corso, LocalDate data) {
-        this.voto = voto;
+    public Voto(int punti, String corso, LocalDate data) {
+        this.punti = punti;
         this.corso = corso;
         this.data = data;
     }
 
-    public int getVoto() {
-        return voto;
+    public int getPunti() {
+        return punti;
     }
 
-    public void setVoto(int voto) {
-        this.voto = voto;
+    public void setPunti(int punti) {
+        this.punti = punti;
     }
 
     public String getCorso() {
@@ -40,8 +40,8 @@ public class Voto {
     @Override
     public String toString() {
         return String.format(
-                "Voto [voto=%s, corso=%s, data=%s]",
-                this.voto,
+                "Voto [punti=%s, corso=%s, data=%s]",
+                this.punti,
                 this.corso,
                 this.data);
     }
