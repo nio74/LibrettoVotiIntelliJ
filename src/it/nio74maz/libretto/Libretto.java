@@ -44,13 +44,12 @@ public class Libretto {
      * @return il {@link Voto} corrispondente, oppure {@code null} se non esistente
      */
     public Voto cercaEsame(String nomeEsame){
-        for(Voto v : this.voti){
-            if (v.getCorso().equals(nomeEsame))
-            {
-                return v;
-            }
-        }
-        return  null;
+        Voto voto = new Voto(0,nomeEsame,null);
+        int pos = this.voti.indexOf(voto);
+        if (pos == -1)
+             return  null;
+        else
+
     }
 
     /**
