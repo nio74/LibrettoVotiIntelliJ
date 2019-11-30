@@ -1,6 +1,7 @@
 package it.nio74maz.libretto;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class Voto {
     private int punti;
@@ -44,5 +45,18 @@ public class Voto {
                 this.punti,
                 this.corso,
                 this.data);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Voto voto = (Voto) o;
+        return corso.equals(voto.corso);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(corso);
     }
 }
