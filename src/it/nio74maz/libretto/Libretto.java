@@ -99,4 +99,10 @@ public class Libretto {
 
     }
 
+    @Override
+    public String toString() {
+        return String.format(
+                "Libretto [voti=%s]",
+                this.voti);
+    }
 }

@@ -39,11 +39,11 @@ public class TestLibretto {
         System.out.format("Il voto %s è  inconflitto  %s\n",sbagliato.toString(),libr.votoInConflitto(sbagliato));
         System.out.format("Il voto %s è  inconflitto  %s\n",mancante.toString(),libr.votoInConflitto(mancante));
 
-        libr.add(giusto);
-        libr.add(sbagliato);
-        libr.add(mancante);
+        System.out.println(libr.add(giusto));
+        System.out.println(libr.add(sbagliato));
+        System.out.println(libr.add(mancante));
 
-        System.out.println();
+        System.out.println(libr.toString());
 
 
 
